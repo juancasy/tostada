@@ -1,0 +1,10 @@
+Package: tostada
+Type: Package
+Title: TOolkit for Stellar Asteroseismic Data Analysis
+Version: 0.1.0
+Author: Juan Carlos Suarez
+Maintainer: Juan Carlos Suarez <jcsuarez@ugr.est>
+Description: Set of useful functions for handling asteroseismic data.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
