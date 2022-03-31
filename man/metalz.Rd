@@ -29,7 +29,7 @@ A numeric vector containing c(X, Y, Z, Fe/H).  If Fe/H is provided
         returned.
 }
 \description{
-\code{metalz} returns the conversion from FeH to Z and viceversa
+\code{metalz} returns the conversion from Fe/H to Z and viceversa
 }
 \details{
 This function requires at least one argument to work, either the metallicity
