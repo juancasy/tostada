@@ -1,6 +1,6 @@
 #' Metallicity conversor
 #'
-#' \code{metalz} returns the conversion from FeH to Z and viceversa
+#' \code{metalz} returns the conversion from Fe/H to Z and viceversa
 #'
 #' This function requires at least one argument to work, either the metallicity
 #' as Fe/H or as Z. Avoid to modify default values for primordial helium or
