@@ -4,7 +4,7 @@ Title: TOolkit for Stellar Asteroseismic Data Analysis
 Version: 0.1.0
 Authors@R: c(
     person("Juan Carlos", "Suarez", email = "jcsuarez@ugr.es", role = c("aut,"cre")))
-Description: Set of useful functions for handling asteroseismic data.
+Description: Set of useful functions for handling asteroseismic data
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
