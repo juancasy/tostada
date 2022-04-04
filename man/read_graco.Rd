@@ -13,14 +13,14 @@ read_graco(filename = NULL, header = FALSE)
 }
 \value{
 A column-named dataframe containing the following data
-        l: the mode degree
-        n: the mode radial node
-        w2: squared oscillation frequency normalized to GMR
-        sig: oscillation frequency in microHz
-        P: oscillation period in days
-        Q: oscillation constant
-        NP: number of nodes as P mode
-        NG: number of nodes as G mode
+l: the mode degree
+n: the mode radial node
+w2: squared oscillation frequency normalized to GMR
+sig: oscillation frequency in microHz
+P: oscillation period in days
+Q: oscillation constant
+NP: number of nodes as P mode
+NG: number of nodes as G mode
 }
 \description{
 \code{read_graco} reads GraCo oscillation files
@@ -28,10 +28,6 @@ A column-named dataframe containing the following data
 \details{
 This function takes one argument, the GraCo file (.dat) to be read with full
 path. It stores the result in an R dataframe.
-
-\usage{
-  read_graco(filename, header = F)
-}
 }
 \examples{
 myfreqs <- read_graco('/myhome/gracofile.dat')
@@ -39,4 +35,9 @@ myfreqs <- read_graco('/myhome/gracofile.dat')
 \dontrun{
   read_graco('/myhome/gracofile.dat')
 }
+
+}
+\seealso{
+\code{\link{read_adipls}}, \code{\link{read_losc}}, and
+\code{\link{read_gyre}}
 }

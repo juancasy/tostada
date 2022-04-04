@@ -15,6 +15,8 @@ file_losc <- paste0(path_sandbox,'1-001-jcd_0100_zdif_z3_present_sun_fgong_lf.mo
 
 test_losc <- read_losc(file_losc, header = T)
 
+
+
 # test_adipls <-read.csv(
 #   file_adipls,
 #   header = FALSE,

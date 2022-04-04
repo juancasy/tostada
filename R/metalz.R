@@ -6,9 +6,6 @@
 #' as Fe/H or as Z. Avoid to modify default values for primordial helium or
 #' variation of Y or X with Z (see details in parameter description).
 #'
-#' \usage{
-#'   metalz(metallicity,z = FALSE, ypr = NULL, dydz = NULL, szx = NULL,prec = 8)
-#' }
 #'
 #' @param metallicity Numeric, scalar. Input metallicty value (default Fe/H).
 #' @param z Logic, scalar. If TRUE then metallicity is provided as Z (default F).

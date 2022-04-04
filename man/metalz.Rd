@@ -25,8 +25,8 @@ precision). It indicates the number of decimals in output.}
 }
 \value{
 A numeric vector containing c(X, Y, Z, Fe/H).  If Fe/H is provided
-        then Z will be returned. Likewise if Z is provided then Fe/H will be
-        returned.
+then Z will be returned. Likewise if Z is provided then Fe/H will be
+returned.
 }
 \description{
 \code{metalz} returns the conversion from Fe/H to Z and viceversa
@@ -35,10 +35,6 @@ A numeric vector containing c(X, Y, Z, Fe/H).  If Fe/H is provided
 This function requires at least one argument to work, either the metallicity
 as Fe/H or as Z. Avoid to modify default values for primordial helium or
 variation of Y or X with Z (see details in parameter description).
-
-\usage{
-  metalz(metallicity,z = FALSE, ypr = NULL, dydz = NULL, szx = NULL,prec = 8)
-}
 }
 \examples{
 metalz(feh = 0.0)

@@ -15,13 +15,13 @@ read_adipls(filename = NULL, header = FALSE, verbose = FALSE)
 }
 \value{
 A column-named dataframe containing the following data
-        l: the mode degree
-        n: the mode radial node
-        w2: squared oscillation frequency normalized to GMR
-        sig: oscillation frequency in microHz
-        E: energy of the mode
-        NP: number of nodes as P mode
-        NG: number of nodes as G mode
+l: the mode degree
+n: the mode radial node
+w2: squared oscillation frequency normalized to GMR
+sig: oscillation frequency in microHz
+E: energy of the mode
+NP: number of nodes as P mode
+NG: number of nodes as G mode
 }
 \description{
 \code{read_adipls} reads ADIPLS oscillation files
@@ -29,10 +29,6 @@ A column-named dataframe containing the following data
 \details{
 This function takes one argument, the ADIPLS file (.dat) to be read with full
 path. It stores the result in an R dataframe.
-
-\usage{
-  read_adipls(filename, header = F)
-}
 }
 \examples{
 myfreqs <- read_adipls('/myhome/gracofile.dat')
@@ -40,4 +36,8 @@ myfreqs <- read_adipls('/myhome/gracofile.dat')
 \dontrun{
   read_graco('/myhome/gracofile.dat')
 }
+}
+\seealso{
+\code{\link{read_graco}}, \code{\link{read_losc}}, and
+\code{\link{read_gyre}}
 }

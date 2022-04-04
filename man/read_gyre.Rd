@@ -13,12 +13,12 @@ read_gyre(filename = NULL, header = FALSE)
 }
 \value{
 A column-named dataframe containing the following data
-        l: the mode degree
-        npg: the mode radial node
-        np: number of nodes as P mode
-        ng: onumber of nodes as G mode
-        sig: frequency in microHz
-        sigi: imaginary part of the frequency
+l: the mode degree
+npg: the mode radial node
+np: number of nodes as P mode
+ng: onumber of nodes as G mode
+sig: frequency in microHz
+sigi: imaginary part of the frequency
 }
 \description{
 \code{read_gyre} reads GYRE oscillation files
@@ -26,10 +26,6 @@ A column-named dataframe containing the following data
 \details{
 This function takes one argument, the GYRE file (.txt) to be read with full
 path. It stores the result in an R dataframe.
-
-\usage{
-  read_gyrer(filename, header = F)
-}
 }
 \examples{
 myfreqs <- read_gyre('/myhome/gyrefile.txt')
@@ -37,4 +33,8 @@ myfreqs <- read_gyre('/myhome/gyrefile.txt')
 \dontrun{
   read_gyre('/myhome/gyrefile.txt')
 }
+}
+\seealso{
+\code{\link{read_gyre}}, \code{\link{read_losc}}, and
+\code{\link{read_gyre}}
 }

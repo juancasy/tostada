@@ -5,9 +5,6 @@
 #' This function takes one argument, the LOSC file (.txt) to be read with full
 #' path. It stores the result in an R dataframe.
 #'
-#' \usage{
-#'   read_losc(filename, header = F)
-#' }
 #'
 #' @param filename String, scalar. Input LOSC oscillation file
 #' @param header Logic. If TRUE then header of file is read (default F)
@@ -24,6 +21,8 @@
 #' \dontrun{
 #'   read_losc('/myhome/loscfile.dat')
 #' }
+#' @seealso \code{\link{read_adipls}}, \code{\link{read_graco}}, and
+#'     \code{\link{read_gyre}}
 
 
 

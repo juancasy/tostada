@@ -5,9 +5,6 @@
 #' This function takes one argument, the GYRE file (.txt) to be read with full
 #' path. It stores the result in an R dataframe.
 #'
-#' \usage{
-#'   read_gyrer(filename, header = F)
-#' }
 #'
 #' @param filename String, scalar. GYRE oscillation file.
 #' @param header Logic. If TRUE then header of file is read (default F).
@@ -27,6 +24,8 @@
 #' \dontrun{
 #'   read_gyre('/myhome/gyrefile.txt')
 #' }
+#' @seealso \code{\link{read_gyre}}, \code{\link{read_losc}}, and
+#'     \code{\link{read_gyre}}
 
 
 read_gyre <- function(filename = NULL,

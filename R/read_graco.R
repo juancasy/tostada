@@ -5,9 +5,6 @@
 #' This function takes one argument, the GraCo file (.dat) to be read with full
 #' path. It stores the result in an R dataframe.
 #'
-#' \usage{
-#'   read_graco(filename, header = F)
-#' }
 #'
 #' @param filename String, scalar. Input GraCo oscillation file
 #' @param header Logic. If TRUE then header of file is read (default F)
@@ -29,6 +26,9 @@
 #' \dontrun{
 #'   read_graco('/myhome/gracofile.dat')
 #' }
+#'
+#' @seealso \code{\link{read_adipls}}, \code{\link{read_losc}}, and
+#'     \code{\link{read_gyre}}
 
 read_graco <- function(filename = NULL,
                        header = FALSE) {

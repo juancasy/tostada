@@ -13,9 +13,9 @@ read_losc(filename = NULL, header = FALSE)
 }
 \value{
 A column-named dataframe containing the following data
-        n: the mode radial node
-        l: the mode degree
-        sig: oscillation frequency in Hz
+n: the mode radial node
+l: the mode degree
+sig: oscillation frequency in Hz
 }
 \description{
 \code{read_losc} reads GraCo oscillation files
@@ -23,10 +23,6 @@ A column-named dataframe containing the following data
 \details{
 This function takes one argument, the LOSC file (.txt) to be read with full
 path. It stores the result in an R dataframe.
-
-\usage{
-  read_losc(filename, header = F)
-}
 }
 \examples{
 myfreqs <- read_losc('/myhome/loscfile.dat')
@@ -34,4 +30,8 @@ myfreqs <- read_losc('/myhome/loscfile.dat')
 \dontrun{
   read_losc('/myhome/loscfile.dat')
 }
+}
+\seealso{
+\code{\link{read_adipls}}, \code{\link{read_graco}}, and
+\code{\link{read_gyre}}
 }
