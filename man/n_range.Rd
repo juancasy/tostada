@@ -14,7 +14,8 @@ It returns a vector with c(n_maxmin, n_minmax)
 }
 \description{
 \code{n_range} determines the common n range for all the L in the
-oscillation spectrum as n = \link{n_maxmin, n_minmax}
+oscillation spectrum as
+n = (\code{\link{n_maxmin}}, \code{\link{n_minmax}})
 }
 \details{
 This function takes one argument, a dataframe with the synthetic oscillation
@@ -26,4 +27,7 @@ range <- n_nrange(df_oscillations)
 \dontrun{
   n_range(df_olscillations)
 }
+}
+\seealso{
+\code{\link{n_maxmin}}, \code{\link{n_minmax}}
 }
