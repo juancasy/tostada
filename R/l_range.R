@@ -2,7 +2,7 @@
 #'
 #' \code{l_range} determines the common L range for all the
 #'     oscillation spectrum as
-#'     n = (L_min, L_max)
+#'     l_range = (L_min, L_max)
 #'
 #'
 #' This function takes one argument, a dataframe with the synthetic oscillation
