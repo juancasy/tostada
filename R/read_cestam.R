@@ -6,7 +6,8 @@
 #'
 #' This function takes one argument: the stellar structure file .osc from
 #' CESTAM code. It should also compatible with last versions (deprecated)
-#' of CESAM2K models as well as MESA (OSC-type) models
+#' of CESAM2K models as well as MESA (OSC-type) models.
+#' The input file can be local or web address (http).
 #'
 #'
 #'@section Metadata:
@@ -93,7 +94,10 @@ read_cestam <- function(strFile){
   }
 
   # Open file for sequential read
-  cfile <- file(description = strFile, open = "r")
+  ifelse ((grepl("http://", strFile) | grepl("https://", strFile)),
+          cfile <- file(description = strFile, open = "r"),
+          cfile <- file(description = strFile, open = "r"))
+
 
   # Header (first 6 lines)
   headerlines <- readLines(con = cfile, n = 6)
