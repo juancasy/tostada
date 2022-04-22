@@ -7,14 +7,13 @@
 read_cestam(strFile)
 }
 \arguments{
-\item{file}{ASCII file (.osc or .OSC)}
+\item{file}{ASCII file with a stellar structure compliant with stellar
+oscillations computation with extension .osc or .OSC.}
 }
 \value{
 A dataframe with the stellar structure, in which global parameters
-\itemize{
-\item common values for the star - are saved as attributes, and variables -
+-common values for the star - are saved as attributes, and variables -
 physical quantities that vary with the stellar depth- are saved as columns.
-}
 }
 \description{
 \code{read_cestam} reads the content of stellar structure files form CESTAM
@@ -25,6 +24,55 @@ This function takes one argument: the stellar structure file .osc from
 CESTAM code. It should also compatible with last versions (deprecated)
 of CESAM2K models as well as MESA (OSC-type) models
 }
+\section{Metadata}{
+
+
+\tabular{ll}{
+\code{name} \tab  name of the model file \cr
+\code{code} \tab  generator code name \cr
+\code{version} \tab  version of the code \cr
+\code{date} \tab date of the computation \cr
+\code{time} \tab time of the computation  \cr
+}
+}
+
+\section{Global variables}{
+
+
+\tabular{ll}{
+\code{rmass} \tab  mass, cgs \cr
+\code{R} \tab  radius, cgs \cr
+\code{rphot} \tab  photometric radius, cgs \cr
+\code{rlum} \tab luminosity, cgs  \cr
+\code{al} \tab convective alpha (dimensionless) \cr
+\code{age} \tab age, Myr \cr
+\code{rotini} \tab initial angular rotation (in rad/s) \cr
+\code{rlogg} \tab surface gravity, cgs, log \cr
+\code{teff} \tab effective temperature (temp(r=rphot)), K \cr
+\code{nshell} \tab number of shells of the model (radial)
+}
+}
+
+\section{Structure variables}{
+
+
+\tabular{ll}{
+\code{r} \tab  radius profile, cgs, log \cr
+\code{q} \tab  mass profile, cgs, log \cr
+\code{temp} \tab temperature profile, K  \cr
+\code{p} \tab pressure profile, cgs \cr
+\code{rho} \tab density profile rho, cgs \cr
+\code{gamma} \tab gamma1 parameter, cgs \cr
+\code{aast} \tab A constant (BV) \cr
+\code{rr} \tab radius normalized to total radius \cr
+\code{c1} \tab solar dynamical time \cr
+\code{cs2} \tab sound speed squared, cgs \cr
+\code{vg} \tab solar dynamical time \cr
+\code{rot} \tab rotation profile, rad/s \cr
+
+}
+}
+
 \examples{
 mystruc <- read_cestam(/my/path/file.osc)
 
