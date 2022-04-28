@@ -64,10 +64,13 @@
 #'
 #'
 #' @examples
-#' mystruc <- read_cestam(/my/path/file.osc)
+#' mystruc <- read_cestam("/my/path/file.osc")
+#'
+#' @examples
+#' mystruc_from_web <- read_cestam("http://my-path-to-file/myoscfile.osc")
 #'
 #' \dontrun{
-#'   mystruc <- read_cestam(/my/path/file.osc)
+#'   mystruc <- read_cestam("/my/path/file.osc")
 #' }
 #' @seealso \code{\link{read_gong}}
 #'

@@ -22,7 +22,8 @@ code, and save it to a dataframe.
 \details{
 This function takes one argument: the stellar structure file .osc from
 CESTAM code. It should also compatible with last versions (deprecated)
-of CESAM2K models as well as MESA (OSC-type) models
+of CESAM2K models as well as MESA (OSC-type) models.
+The input file can be local or web address (http).
 }
 \section{Metadata}{
 
@@ -74,10 +75,12 @@ of CESAM2K models as well as MESA (OSC-type) models
 }
 
 \examples{
-mystruc <- read_cestam(/my/path/file.osc)
+mystruc <- read_cestam("/my/path/file.osc")
+
+mystruc_from_web <- read_cestam("http://my-path-to-file/myoscfile.osc")
 
 \dontrun{
-  mystruc <- read_cestam(/my/path/file.osc)
+  mystruc <- read_cestam("/my/path/file.osc")
 }
 }
 \seealso{
