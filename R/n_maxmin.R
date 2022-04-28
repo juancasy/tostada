@@ -8,9 +8,10 @@
 #' spectra read from read_graco, read_adipls, read_gyre, or read_losc.
 #'
 #'
-#' @param model.df DataFrame.
+#' @param model.df dataframe.
 #' @param mono logical option (default FALSE) to calculate minimum n value
 #' from which the n vector is monotonic (i.e. diff(n)=1).
+#'
 #' @return It returns a single numeric value
 #'
 #'

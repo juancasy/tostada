@@ -9,7 +9,10 @@
 #' spectra read from read_graco, read_adipls, read_gyre, or read_losc.
 #'
 #'
-#' @param model.df dataFrame
+#' @param model.df dataframe
+#' @param mono logical option (default FALSE) to calculate minimum n value
+#' from which the n vector is monotonic (i.e. diff(n)=1).
+#'
 #' @return It returns a vector with c(l_min, l_max, n_min, n_max)
 #'
 #'
@@ -23,8 +26,11 @@
 #' @seealso \code{\link{n_range}}, \code{\link{l_range}}
 
 
-nl_range <- function(model.df) {
-  nr <- n_range(model.df)
+nl_range <- function(model.df, mono = F) {
+  ifelse(mono,
+         nr <- n_range(model.df, mono = T),
+         nr <- n_range(model.df)
+         )
   lr <- l_range(model.df)
   nlrange <- c(lr[1], lr[2], nr[1], nr[2])
 }
