@@ -9,6 +9,8 @@
 #'
 #'
 #' @param model.df DataFrame.
+#' @param mono logical option (default FALSE) to calculate minimum n value
+#' from which the n vector is monotonic (i.e. diff(n)=1).
 #' @return It returns a single numeric value
 #'
 #'
@@ -21,10 +23,20 @@
 #' }
 
 
-n_maxmin <- function(model.df){
+n_maxmin <- function(model.df, mono = F){
   L <- unique(model.df$l)
-  nmin <- sapply(L, function(x)
-    min(model.df$n[which(model.df$l == x)]))
+  ifelse(mono,
+         nmin <- sapply(L, function(x){
+           nn <- model.df$n[which(model.df$l == x)]
+           ifelse(any(diff(nn)>1),
+                  min_n <- nn[max(which(diff(nn) > 1) + 1)],
+                  min_n <- min(nn))
+           return(min_n)
+         }),
+         nmin <- sapply(L, function(x)
+           min(model.df$n[which(model.df$l == x)]))
+         )
+
   max_nmin <- max(nmin)
 }
 
