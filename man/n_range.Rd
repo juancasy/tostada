@@ -7,7 +7,7 @@
 n_range(model.df, mono = F)
 }
 \arguments{
-\item{model.df}{DataFrame}
+\item{model.df}{dataframe}
 
 \item{mono}{logical option (default FALSE) to calculate minimum n value
 from which the n vector is monotonic (i.e. diff(n)=1).}

@@ -4,10 +4,13 @@
 \alias{nl_range}
 \title{nl_range}
 \usage{
-nl_range(model.df)
+nl_range(model.df, mono = F)
 }
 \arguments{
-\item{model.df}{dataFrame}
+\item{model.df}{dataframe}
+
+\item{mono}{logical option (default FALSE) to calculate minimum n value
+from which the n vector is monotonic (i.e. diff(n)=1).}
 }
 \value{
 It returns a vector with c(l_min, l_max, n_min, n_max)
