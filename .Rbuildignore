@@ -4,3 +4,6 @@
 ^sandbox$
 ^README\.Rmd$
 /sandboxfiles
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
