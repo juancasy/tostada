@@ -10,3 +10,5 @@ home:
     frequent operations on these data (e.g. compute large separations from s
     pectra).
 
+home:
+  strip_header: true
