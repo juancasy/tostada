@@ -2,7 +2,6 @@ url: https://juancasy.github.io/tostada/
 template:
   bootstrap: 5
 home:
-  strip_header: true
   title: TOolkit for Stellar Asteroseismic Data Analysis
   description: >
     set of useful functions to deal with themost standard asteroseismic data
