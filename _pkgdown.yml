@@ -8,4 +8,4 @@ home:
     (observation files, models, etc.) as well as
     frequent operations on these data (e.g. compute large separations from s
     pectra).
-  strip_header: true
+
