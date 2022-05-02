@@ -1,0 +1,52 @@
+---
+title: "The basics"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{The basics}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+To get all the functionalities of tostada, just load the package as usual
+
+```{r setup}
+library(tostada)
+```
+
+The tostada package contains different types of useful functions to 
+deal with asteorseismic data, both observational (e.g. light curves or 
+observed oscillation spectra, etc.) and theoretical (e.g. structure models, 
+synthetic oscillation spectra, etc.).
+
+
+
+## Types of functions
+
+There are three types of funtions dependending on their functionality
+
+### Reading standard asteroseismic data
+
+Tosdata will just transform read data from file to a dataframe structured in 
+a way it can be used by other functions of the package, i.e. for ploting 
+purposes, and making it easy and robust, the compare different models.
+
+### Seismic functions
+
+Tostada contains a set of frequently used functions that make use of tostada
+structures (e.g. from reading observations/data). For example, l_sep() 
+computes the large separation of a given theoretical spectrum read by any
+of the read-type functions.
+
+### Utilities (miscelanea)
+
+Tostada includes a set of utilities related with asteroseismology that are
+frequently necessary during asteroseismic data manipulation. An example of such
+utility can be: constants(), which provide a dataframe with a set of constants
+like the solar mass, solar radius, G, etc.
