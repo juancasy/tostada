@@ -2,3 +2,27 @@ url: https://juancasy.github.io/tostada
 template:
   bootstrap: 5
 
+reference:
+- title: Reading files
+  desc:  >
+   This routines read both observational (e.g. lightcurves) and theoretical data
+   (structure or oscillation models). Since there is no standard for any of the
+   above, this package covers a bunch of known formats and outpufiles from
+   renowned evolutionary codes and oscillation codes.
+- contents:
+  - starts_with("read_")
+- title: Seismic functions (on frequencies)
+- contents:
+  - l_range
+  - n_range
+  - nl_range
+  - n_maxmin
+  - n_minmax
+  - n_range
+  - l_sep
+  - s_sep
+- title: Utilities
+- contents:
+  - metalz
+  - constants
+
