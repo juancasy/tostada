@@ -30,10 +30,11 @@ Note that the provided L is the lowest, so the dataframe must contain the
 frequencies corresponding to L+2 modes.
 }
 \examples{
-my_ss <- l_sep(df_oscillations, 0) This calculates the ls for radial modes
-
 \dontrun{
-  s_sep(df_olscillations 0)
+ my_ss <- l_sep(df_oscillations, 0) #This calculates the ls for radial modes
+}
+\dontrun{
+  s_sep(df_olscillations, 0)
 }
 
 }

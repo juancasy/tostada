@@ -19,10 +19,11 @@
 #'
 #'
 #' @examples
-#' my_ss <- l_sep(df_oscillations, 0) This calculates the ls for radial modes
-#'
 #' \dontrun{
-#'   s_sep(df_olscillations 0)
+#'  my_ss <- l_sep(df_oscillations, 0) #This calculates the ls for radial modes
+#' }
+#' \dontrun{
+#'   s_sep(df_olscillations, 0)
 #' }
 #'
 #' @seealso \code{\link{l_sep}}

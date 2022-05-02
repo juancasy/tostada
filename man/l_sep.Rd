@@ -26,11 +26,13 @@ where
 nu_b = nu_{n,l}; nu_a = nu_{n-1,l}
 }
 \examples{
-my_ls <- l_sep(df_oscillations, 0) This calculates the ls for radial modes
-
 \dontrun{
-  l_sep(df_olscillations 0)
-}
+   my_ls <- l_sep(df_oscillations, 0) #This calculates the ls for radial
+   modes
+   }
+\dontrun{
+  l_sep(df_olscillations, 0)
+  }
 
 }
 \seealso{

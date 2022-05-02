@@ -1,11 +1,4 @@
-url: https://juancasy.github.io/tostada/
+url: https://juancasy.github.io/tostada
 template:
   bootstrap: 5
-  bootswatch: morph
-home:
-  title: "TOolkit for Stellar Asteroseismic Data Analysis"
-  description: >
-    "set of useful functions to deal with themost standard asteroseismic data
-    (observation files, models, etc.) as well as
-    frequent operations on these data (e.g. compute large separations from s
-    pectra)...""
+
