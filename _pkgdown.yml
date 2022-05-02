@@ -12,7 +12,7 @@ reference:
    This routines read both observational (e.g. lightcurves) and theoretical data
    (structure or oscillation models). Since there is no standard for any of the
    above, this package covers a bunch of known formats and outpufiles from
-   renowned evolutionary codes and oscillation codes.
+   renowned evolutionary codes and oscillation codes
 - contents:
   - starts_with("read_")
 - title: Seismic functions (on frequencies)
