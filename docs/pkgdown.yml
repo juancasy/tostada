@@ -2,8 +2,8 @@ pandoc: 2.14.0.3
 pkgdown: 2.0.3
 pkgdown_sha: ~
 articles:
-  get_started: get_started.html
-last_built: 2022-05-02T15:00Z
+  tostada: tostada.html
+last_built: 2022-05-02T16:39Z
 urls:
   reference: https://juancasy.github.io/tostada/reference
   article: https://juancasy.github.io/tostada/articles
