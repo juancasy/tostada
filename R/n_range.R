@@ -34,5 +34,4 @@ n_range <- function(model.df, mono = F) {
   )
 
   nrange <- c(n_low, n_high)
-
 }
