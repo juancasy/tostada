@@ -3,7 +3,7 @@ pkgdown: 2.0.3
 pkgdown_sha: ~
 articles:
   get_started: get_started.html
-last_built: 2022-05-02T14:41Z
+last_built: 2022-05-02T14:54Z
 urls:
   reference: https://juancasy.github.io/tostada/reference
   article: https://juancasy.github.io/tostada/articles
