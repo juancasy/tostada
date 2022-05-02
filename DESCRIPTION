@@ -3,7 +3,7 @@ Type: Package
 Title: TOolkit for Stellar Asteroseismic Data Analysis
 Version: 0.1.0.9007
 Authors@R: 
-    person("JuanCarlos", "Suarez", , "fjcsuarez@ugr.es", role = c("aut", "cre"),
+    person("Juan Carlos", "Suárez", , "jcsuarez@ugr.es", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3649-8384")) 
 Description: Set of useful functions for handling asteroseismic data
 License: GPL (>= 3)
