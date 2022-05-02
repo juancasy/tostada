@@ -2,12 +2,10 @@ url: https://juancasy.github.io/tostada
 template:
   bootstrap: 5
   bootswatch: spacelab
-
 navbar:
   structure:
     left:  [intro, reference, articles, news]
     right: [search, github]
-
 reference:
 - title: Reading files
   desc:  >
