@@ -1,4 +1,5 @@
 Package: tostada
+Type: Package
 Title: TOolkit for Stellar Asteroseismic Data Analysis
 Version: 0.0.0.9007
 Authors@R: 

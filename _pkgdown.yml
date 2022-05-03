@@ -1,4 +1,11 @@
 url: https://juancasy.github.io/tostada
+
+development:
+  version_tooltip: "Development version"
+home:
+  title: this is my title
+  desc: >
+   Set of useful functions for handling asteroseismic data
 template:
   bootstrap: 5
   bootswatch: spacelab
