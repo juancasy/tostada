@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# tostada
+# TOolkit for Stellar Asteroseismic Data Analysis
 
 <!-- badges: start -->
 <!-- badges: end -->
