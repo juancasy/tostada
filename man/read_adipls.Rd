@@ -4,14 +4,12 @@
 \alias{read_adipls}
 \title{read_adipls}
 \usage{
-read_adipls(filename = NULL, header = FALSE, verbose = FALSE)
+read_adipls(filename = NULL, header = FALSE)
 }
 \arguments{
 \item{filename}{String, scalar. Input ADIPLS oscillation file.}
 
 \item{header}{Logic. If TRUE then header of file is read (default F).}
-
-\item{verbose}{Logic. If TRUE then}
 }
 \value{
 A column-named dataframe containing the following data

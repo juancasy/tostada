@@ -8,7 +8,6 @@
 #'
 #' @param filename String, scalar. Input ADIPLS oscillation file.
 #' @param header Logic. If TRUE then header of file is read (default F).
-#' @param verbose Logic. If TRUE then
 #' @return A column-named dataframe containing the following data
 #'         l: the mode degree
 #'         n: the mode radial node
@@ -31,8 +30,7 @@
 
 
 read_adipls <- function(filename = NULL,
-                        header = FALSE,
-                        verbose = FALSE) {
+                        header = FALSE) {
   # Reading the data
   if (header) {
     no_skip <- 7
