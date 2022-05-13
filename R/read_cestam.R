@@ -27,11 +27,11 @@
 #'    \code{rmass} \tab  mass, cgs \cr
 #'    \code{R} \tab  radius, cgs \cr
 #'    \code{rphot} \tab  photometric radius, cgs \cr
-#'    \code{rlum} \tab luminosity, cgs  \cr
+#'    \code{rlum} \tab luminosity, cgs, log10  \cr
 #'    \code{al} \tab convective alpha (dimensionless) \cr
 #'    \code{age} \tab age, Myr \cr
 #'    \code{rotini} \tab initial angular rotation (in rad/s) \cr
-#'    \code{rlogg} \tab surface gravity, cgs, log \cr
+#'    \code{rlogg} \tab surface gravity, cgs, log10 \cr
 #'    \code{teff} \tab effective temperature (temp(r=rphot)), K \cr
 #'    \code{nshell} \tab number of shells of the model (radial)
 #'  }
@@ -165,11 +165,11 @@ read_cestam <- function(strFile){
   # Store global data as attributes
   attr(e,"rmass") <- datos[indices["rmass"]]
   attr(e,"rfotom") <- datos[indices["rfotom"]]
-  attr(e,"rlum") <- log(datos[indices["rlum"]]/constants$slum)
+  attr(e,"rlum") <- log10(datos[indices["rlum"]]/constants$slum)
   attr(e,"alpha") <- datos[indices["al"]]
   attr(e,"age") <- datos[indices["age"]]
   attr(e,"rotini") <- datos[indices["rotini"]]
-  attr(e,"rlogg") <- log((constants$gk*attributes(e)$rmass)/(attributes(e)$rfotom^2))
+  attr(e,"rlogg") <- log10((constants$gk*attributes(e)$rmass)/(attributes(e)$rfotom^2))
 
   # Read arrays of data
   # The adiabatic .osc has numDatosCapa data per shell and 5 data per line

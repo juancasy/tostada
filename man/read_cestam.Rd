@@ -44,11 +44,11 @@ The input file can be local or web address (http).
 \code{rmass} \tab  mass, cgs \cr
 \code{R} \tab  radius, cgs \cr
 \code{rphot} \tab  photometric radius, cgs \cr
-\code{rlum} \tab luminosity, cgs  \cr
+\code{rlum} \tab luminosity, cgs, log10  \cr
 \code{al} \tab convective alpha (dimensionless) \cr
 \code{age} \tab age, Myr \cr
 \code{rotini} \tab initial angular rotation (in rad/s) \cr
-\code{rlogg} \tab surface gravity, cgs, log \cr
+\code{rlogg} \tab surface gravity, cgs, log10 \cr
 \code{teff} \tab effective temperature (temp(r=rphot)), K \cr
 \code{nshell} \tab number of shells of the model (radial)
 }
