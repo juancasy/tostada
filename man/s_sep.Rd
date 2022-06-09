@@ -20,8 +20,10 @@ A vector containing the large separation for the given L
 \details{
 This function takes one argument, a dataframe with the synthetic oscillation
 spectra read from read_graco, read_adipls, read_gyre, or read_losc, and
-calculates the small spacing defined as\preformatted{ss = nu_b - nu_a
-}
+calculates the small spacing defined as
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{ss = nu_b - nu_a
+}\if{html}{\out{</div>}}
 
 where
 nu_b = nu_{n,l}; nu_a = nu_{n-1,l+2}
