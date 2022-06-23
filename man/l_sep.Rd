@@ -53,7 +53,7 @@ ls = median(median(dnu,L=0), median(dnu,L=1), ...)
    calculates the median of the ls for radial modes
    }
 \dontrun{
-  l_sep(df_olscillations, L=0, vector = T) # This
+  my_ls <- l_sep(df_oscillations, L=0, vector = T) # This
    calculates the ls for radial modes, and gives a vector with values.
   }
 

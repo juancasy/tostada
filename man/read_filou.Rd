@@ -4,23 +4,21 @@
 \alias{read_filou}
 \title{read_filou}
 \usage{
-read_filou(filename = NULL, header = FALSE)
+read_filou(filename = NULL)
 }
 \arguments{
 \item{filename}{String, scalar. Input FILOU oscillation file (.frq)}
-
-\item{header}{Logic. If TRUE then header of file is read (default F)}
 }
 \value{
 A column-named dataframe containing the following data
-l: the mode degree
-n: the mode radial node
-w2: squared oscillation frequency normalized to GMR
-sig: oscillation frequency in microHz
-fc: oscillation period in days
-No: oscillation constant
-pc: number of nodes as P mode
-I: number of nodes as G mode
+l: (integer) mode degree
+n: (integer) mode radial node
+w2: (double float) squared oscillation frequency normalized to GMR
+sig: (double float) oscillation frequency in microHz
+fc: (integer) Id of the mode with which is coupled
+No: Mode Id
+pc: (double float) coupling coefficient
+I: (double float) mode inertia
 
 \if{html}{\out{<div class="sourceCode">}}\preformatted{    All data included in file header is stored as attributes. To see all
     attributes use:
