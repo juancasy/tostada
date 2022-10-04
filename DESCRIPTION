@@ -1,7 +1,7 @@
 Package: tostada
 Type: Package
 Title: TOolkit for Stellar Asteroseismic Data Analysis
-Version: 0.0.0.9010
+Version: 0.0.0.9011
 Authors@R: 
     person("Juan Carlos", "Suárez", , "juancasy@gmail.comt", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3649-8384"))
