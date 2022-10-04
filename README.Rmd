@@ -9,13 +9,15 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "100%",
+  fig.path = "man/figures/"
 )
 ```
 
 # TOolkit for Stellar Asteroseismic Data Analysis
 
 <!-- badges: start -->
+# pkgdown <img src="man/figures/logo.png" align="right" />
 <!-- badges: end -->
 
 The goal of tostada is to provide a set of useful functions to deal with the

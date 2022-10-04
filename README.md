@@ -4,6 +4,9 @@
 # TOolkit for Stellar Asteroseismic Data Analysis
 
 <!-- badges: start -->
+
+# <img src="man/figures/logo.png" style="float:right; height:200px;" />
+
 <!-- badges: end -->
 
 The goal of tostada is to provide a set of useful functions to deal with
