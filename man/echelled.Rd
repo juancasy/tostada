@@ -2,7 +2,7 @@
 % Please edit documentation in R/echelled.R
 \name{echelled}
 \alias{echelled}
-\title{read_filou}
+\title{echelled}
 \usage{
 echelled(df_ospec = NULL, per = NULL, collapse = F)
 }

@@ -1,4 +1,4 @@
-#' read_filou
+#' echelled
 #'
 #' \code{echelled} computes echelle diagram from observed oscillation spectrum
 #'

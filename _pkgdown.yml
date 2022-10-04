@@ -36,6 +36,7 @@ reference:
   - n_range
   - l_sep
   - s_sep
+  - echelled
 - title: Utilities
 - contents:
   - metalz
