@@ -50,11 +50,11 @@ ls = median(median(dnu,L=0), median(dnu,L=1), ...)
 \examples{
 \dontrun{
    my_ls <- l_sep(df_oscillations, L=0, n_inf = 2, n_sup =10) # This
-   calculates the median of the ls for radial modes
+   #calculates the median of the ls for radial modes
    }
 \dontrun{
   my_ls <- l_sep(df_oscillations, L=0, vector = T) # This
-   calculates the ls for radial modes, and gives a vector with values.
+   #calculates the ls for radial modes, and gives a vector with values.
   }
 
 }

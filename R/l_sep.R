@@ -32,6 +32,15 @@
 #'  - If L specified: [dnu_n2-n1, dnu_n3-n2, dnu_n4-n3,...dnu_n-(n-1)]
 #'
 #'
+#' @examples
+#' \dontrun{
+#'    my_ls <- l_sep(df_oscillations, L=0, n_inf = 2, n_sup =10) # This
+#'    #calculates the median of the ls for radial modes
+#'    }
+#' \dontrun{
+#'   my_ls <- l_sep(df_oscillations, L=0, vector = T) # This
+#'    #calculates the ls for radial modes, and gives a vector with values.
+#'   }
 #'
 #' @seealso \code{\link{s_sep}}
 
