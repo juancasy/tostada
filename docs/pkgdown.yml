@@ -3,7 +3,7 @@ pkgdown: 2.0.6
 pkgdown_sha: ~
 articles:
   tostada: tostada.html
-last_built: 2022-10-04T18:30Z
+last_built: 2022-10-04T18:34Z
 urls:
   reference: https://juancasy.github.io/tostada/reference
   article: https://juancasy.github.io/tostada/articles

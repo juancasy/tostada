@@ -4,7 +4,13 @@
 \alias{echelled}
 \title{echelled}
 \usage{
-echelled(df_ospec = NULL, per = NULL, collapse = F)
+echelled(
+  df_ospec = NULL,
+  per = NULL,
+  collapse = F,
+  collvar = NULL,
+  norm = NULL
+)
 }
 \arguments{
 \item{df_ospec}{Dataframe. It must contain at least a column (after
@@ -12,6 +18,13 @@ the name of sig) that contains the oscillation frequencies}
 
 \item{per}{Numeric. The value of the periodic pattern with which the
 frequencies will be sliced.}
+
+\item{collapse}{Logic. If true, then echelled returns the collapsed diagram
+using the selected collapsed variable (collvar, default amplitude)}
+
+\item{collvar}{char. Used only when collapse option is true. Three choices
+for collapse variable: "a" (default) sums over amplitudes; "sa" sums over
+frequency x amplitude, and "sa2" sums over (frequency x amplitude)^2.}
 }
 \value{
 Dataframe. The input data frame with an additional column with the
@@ -27,6 +40,10 @@ This function takes two arguments, a dataframe containing observed
 frequencies and the periodicity with which the frequencies are to be scaled
 as
 frequency (modulo) periodicity
+
+It also includes the option for collapse diagramme over the amplitudes,
+the amplitudes weighted by the frequencies (freq x amp), and (freq x amp)^2
+that is, the energy of the mode.
 }
 \seealso{
 \code{\link{read_adipls}}, \code{\link{read_losc}},

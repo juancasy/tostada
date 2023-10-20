@@ -37,6 +37,7 @@ reference:
   - l_sep
   - s_sep
   - echelled
+  - readobs_corot
 - title: Utilities
 - contents:
   - metalz

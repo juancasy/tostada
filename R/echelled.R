@@ -7,13 +7,22 @@
 #' as
 #'          frequency (modulo) periodicity
 #'
-#'
+#' It also includes the option for collapse diagramme over the amplitudes,
+#' the amplitudes weighted by the frequencies (freq x amp), and (freq x amp)^2
+#' that is, the energy of the mode.
 #'
 #' @param df_ospec Dataframe. It must contain at least a column (after
 #' the name of sig) that contains the oscillation frequencies
 #'
 #' @param per Numeric. The value of the periodic pattern with which the
 #' frequencies will be sliced.
+#'
+#' @param collapse Logic. If true, then echelled returns the collapsed diagram
+#' using the selected collapsed variable (collvar, default amplitude)
+#'
+#' @param collvar char. Used only when collapse option is true. Three choices
+#' for collapse variable: "a" (default) sums over amplitudes; "sa" sums over
+#' frequency x amplitude, and "sa2" sums over (frequency x amplitude)^2.
 #'
 #' @return Dataframe. The input data frame with an additional column with the
 #' frequencies scaled by per:
@@ -27,7 +36,9 @@
 #'
 echelled <- function(df_ospec = NULL,
                      per = NULL,
-                     collapse = F) {
+                     collapse = F,
+                     collvar = NULL,
+                     norm = NULL) {
 
   if (!any(names(df_ospec) == "sig")) stop("At least 'sig' data must be present")
   if (!any(names(df_ospec) == "amp")) df_ospec$amp <- 1
@@ -50,6 +61,12 @@ echelled <- function(df_ospec = NULL,
 
     # Using group_by each factor (pixel) is treated simultaneously to sum up
     # all the amplitudes corresponding to this factor.
+    #
+
+    # CONTINUAR AQUÍ:
+    #ifelse(is.null(collvar),xamp <- d_ech$amp, xamp <- collvar)
+
+
     df_ech <- df_ech %>%
       mutate(ind = gl(idx, 1, np)) %>% # Indexation of cycles in the dataframe
       group_by(ind) %>%                # grouping by index
