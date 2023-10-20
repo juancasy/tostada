@@ -20,9 +20,7 @@ knitr::opts_chunk$set(
 # <img src="man/figures/logo.png" style="float:right; height:200px;" />
 <!-- badges: end -->
 
-The goal of tostada is to provide a set of useful functions to deal with the
-most standard asteroseismic data (observation files, models, etc.) as well as
-frequent operations on these data (e.g. compute large separations from spectra)
+The goal of tostada is to provide a set of useful functions to deal with the most standard asteroseismic data (observation files, models, etc.) as well as frequent operations on these data (e.g. compute large separations from spectra)
 
 ## Installation
 
