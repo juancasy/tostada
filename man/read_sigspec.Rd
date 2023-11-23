@@ -58,7 +58,7 @@ so far.
 }
 }
 \description{
-\code{read_sispec} reads SigSpec output files
+\code{read_sigspec} reads SigSpec output files
 }
 \details{
 This function takes one argument, the SigSpec (.dat) to be read with

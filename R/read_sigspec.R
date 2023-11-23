@@ -1,6 +1,6 @@
 #' read_sigspec
 #'
-#' \code{read_sispec} reads SigSpec output files
+#' \code{read_sigspec} reads SigSpec output files
 #'
 #' @details This function takes one argument, the SigSpec (.dat) to be read with
 #'          full path. It stores the result in an R dataframe. The function
