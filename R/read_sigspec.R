@@ -73,16 +73,16 @@
 #'   * `amp`: (float)  amplitude (units of observable)
 #'   * `phase`: (float) phase angle (rad)
 #'
-#'@examples
+#' @examples
 #' myfreqs <- read_sigspec('/myhome/results.dat')
 #'
 #' \dontrun{
 #'   read_sigspec('/myhome/results.dat')
 #' }
 #'
-#'@seealso \code{\link{read_corot}}
+#' @seealso \code{\link{read_corot}}
 #'
-#'@export
+#' @export
 read_sigspec <- function(filename = NULL,
                          type = c("pwspec",
                                   "residuals",
