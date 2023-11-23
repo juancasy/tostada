@@ -17,7 +17,7 @@
 #' [CoRoT Legacy Book](https://www.edp-open.org/books/edp-open-books/320-the-
 #' corot-legacy-book)
 #'
-#' ## AN2_STAR (hdu=1)
+#'#### AN2_STAR (hdu=1)
 #'
 #'  * DATETT: (double) date of measurement in Terrestrial Time; terrestrial
 #'  time, Julian date
@@ -27,7 +27,7 @@
 #'  * RAWSTATUS: (int)
 #'  * BG: (float) Background flux already subtracted; e- per 32s
 #'
-#'## AN2_STAR (hdu=2)
+#'#### AN2_STAR (hdu=2)
 #'
 #' * DATEBARTT: (double) date of the measurement in the solar barycentric
 #'   reference frame; Solar barycentric Terrestrial Time, Julian day
@@ -36,7 +36,7 @@
 #' * FLUXDEVBAR: (float)
 #' * STATUSBAR: (int) Flag of the status
 #'
-#'## AN2_STAR (hdu=3)
+#'#### AN2_STAR (hdu=3)
 #' * DATEBARREGTT: (double) date of the measurement in the solar barycentric
 #'   reference frame; Solar barycentric Terrestrial Time, Julian day.
 #' * FLUXBARREG: (float) White flux, after the gap filling correction;
@@ -44,7 +44,7 @@
 #' * FLUXDEVBARREG: (float)
 #' * STATUSBARREG: (int) Flag of the status
 #'
-#'## EN2_STAR_CH  (hdu=1)
+#'#### EN2_STAR_CH  (hdu=1)
 #'
 #' * DATE: (string) calendar date, yyyy-mm-ddThh:mm:ss
 #' * DATETT: (double) date of measurement in Terrestrial Time; terrestrial
@@ -64,7 +64,7 @@
 #' * WHITEFLUX: (float) Integrated white flux; e- per 32s
 #' * BG: (float) Background flux already subtracted; e- per 32s
 #'
-#'## EN2_STAR_CH (hdu=2)
+#'#### EN2_STAR_CH (hdu=2)
 #'
 #' * DATETT: (double) date of measurement in Terrestrial Time; terrestrial
 #'   time, Julian date
@@ -97,6 +97,7 @@
 #'   readobs_corot('/myhome/EN2_STAR_CHR_corotid_tini-tfin.fits')
 #'}
 #'
+#' @export
 read_corot <- function(corotfits, hdu = 1)
 {
   # Read the CoRoT FITS file using FITSio::readFITS and get column names
