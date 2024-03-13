@@ -9,9 +9,9 @@
 #' where
 #'    nu_b = nu_{n,l}; nu_a = nu_{n-1,l}
 #' Single value result is calculated as
-#'    ls = median(dnu)
+#'    l_sep = median(dnu)
 #' When all L are considered then
-#'    ls = median(median(dnu,L=0), median(dnu,L=1), ...)
+#'    l_sep = mean(median(dnu,L=0), median(dnu,L=1), ...)
 #'
 #'
 #' @param model.df DataFrame
@@ -20,7 +20,7 @@
 #' minimum is calculated using tostada::nrange function
 #' @param n_sup Scalar. Maximum radial order (n) considered. If NULL (default)
 #' maximum is calculated using tostada::nrange function
-#' @param vector Logical. Indicates wether user want a single value or the list
+#' @param vector Logical. Indicates whether user want a single value or the list
 #' of spacings for the indicated L.
 #' @return Large separation calculated from frequencies for the chosen L value.
 #' If L is not provided then l_sep returns the median value from all the Dnu(L)
@@ -102,6 +102,7 @@ l_sep <- function(model.df,
 # return result as a vector or as single value
   ifelse(vector,
          return(dnu_list),
-         return(dnu_value))
+         return(mean(dnu_value))
+         )
 }
 
