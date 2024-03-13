@@ -15,7 +15,10 @@
 #'
 #'
 #' @param model.df DataFrame
-#' @param L Scalar. Mode degree for which the large separation is calculated
+#' @param L Scalar. Mode degree for which the large separation is calculated, If
+#' NULL (default) l_sep compute the mean of the all L present in df.
+#' @param Lmax Scalar. Maximum L value for which l_sep is calculated. If NULL
+#' (default) all L values present are considered.
 #' @param n_inf Scalar. Minimum radial order (n) considered. If NULL (default)
 #' minimum is calculated using tostada::nrange function
 #' @param n_sup Scalar. Maximum radial order (n) considered. If NULL (default)
@@ -46,6 +49,7 @@
 
 l_sep <- function(model.df,
                   L = NULL,
+                  Lmax = NULL,
                   n_inf = NULL,
                   n_sup = NULL,
                   vector = FALSE
@@ -57,6 +61,8 @@ l_sep <- function(model.df,
   # If nrange is not furnished then we use common nrange for all L
   ifelse(is.null(n_inf), ninf <- nrange[1], ninf <- n_inf)
   ifelse(is.null(n_sup), nsup <- nrange[2], nsup <- n_sup)
+  if (!is.null(Lmax))  l_values <- l_values[which(l_values <= Lmax)]
+
 
   # Case of no m values in model, LS is computed assuming m(L<>0) = 0
   ifelse(with_m,
@@ -70,7 +76,7 @@ l_sep <- function(model.df,
                                   model.df$n <= nsup &
                                   model.df$m == 0]))
              })
-             dnu_value <- median(dnu_list)
+             dnu_value <- mean(dnu_list)
            } else{
              nu_list <- model.df$sig[model.df$l == L &
                                        model.df$n >= ninf &
@@ -102,7 +108,7 @@ l_sep <- function(model.df,
 # return result as a vector or as single value
   ifelse(vector,
          return(dnu_list),
-         return(mean(dnu_value))
+         return(dnu_value)
          )
 }
 

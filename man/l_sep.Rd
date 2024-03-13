@@ -4,12 +4,23 @@
 \alias{l_sep}
 \title{l_sep}
 \usage{
-l_sep(model.df, L = NULL, n_inf = NULL, n_sup = NULL, vector = FALSE)
+l_sep(
+  model.df,
+  L = NULL,
+  Lmax = NULL,
+  n_inf = NULL,
+  n_sup = NULL,
+  vector = FALSE
+)
 }
 \arguments{
 \item{model.df}{DataFrame}
 
-\item{L}{Scalar. Mode degree for which the large separation is calculated}
+\item{L}{Scalar. Mode degree for which the large separation is calculated, If
+NULL (default) l_sep compute the mean of the all L present in df.}
+
+\item{Lmax}{Scalar. Maximum L value for which l_sep is calculated. If NULL
+(default) all L values present are considered.}
 
 \item{n_inf}{Scalar. Minimum radial order (n) considered. If NULL (default)
 minimum is calculated using tostada::nrange function}
@@ -17,7 +28,7 @@ minimum is calculated using tostada::nrange function}
 \item{n_sup}{Scalar. Maximum radial order (n) considered. If NULL (default)
 maximum is calculated using tostada::nrange function}
 
-\item{vector}{Logical. Indicates wether user want a single value or the list
+\item{vector}{Logical. Indicates whether user want a single value or the list
 of spacings for the indicated L.}
 }
 \value{
@@ -43,9 +54,9 @@ dnu = nu_b - nu_a
 where
 nu_b = nu_{n,l}; nu_a = nu_{n-1,l}
 Single value result is calculated as
-ls = median(dnu)
+l_sep = median(dnu)
 When all L are considered then
-ls = median(median(dnu,L=0), median(dnu,L=1), ...)
+l_sep = mean(median(dnu,L=0), median(dnu,L=1), ...)
 }
 \examples{
 \dontrun{
