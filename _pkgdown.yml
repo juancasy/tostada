@@ -1,44 +1,4 @@
-url: https://juancasy.github.io/tostada
-
+url: https://juancasy.github.io/tostada/
 template:
   bootstrap: 5
-  bootswatch: spacelab
-
-development:
-  version_tooltip: "Development version"
-
-
-home:
-  title: this is my title
-  desc: >
-   Set of useful functions for handling asteroseismic data
-
-navbar:
-  structure:
-    left:  [intro, reference, articles, news]
-    right: [search, github]
-reference:
-- title: Reading files
-  desc:  >
-   This routines read both observational (e.g. lightcurves) and theoretical data
-   (structure or oscillation models). Since there is no standard for any of the
-   above, this package covers a bunch of known formats and outpufiles from
-   renowned evolutionary codes and oscillation codes
-- contents:
-  - starts_with("read_")
-- title: Seismic functions (on frequencies)
-- contents:
-  - l_range
-  - n_range
-  - nl_range
-  - n_maxmin
-  - n_minmax
-  - n_range
-  - l_sep
-  - s_sep
-  - echelled
-- title: Utilities
-- contents:
-  - metalz
-  - constants
 
