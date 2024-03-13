@@ -1,7 +1,7 @@
 Package: tostada
 Type: Package
 Title: TOolkit for Stellar Asteroseismic Data Analysis
-Version: 0.0.0.9013
+Version: 0.0.0.9014
 Authors@R: 
     person("Juan Carlos", "Suárez", , "juancasy@gmail.comt", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-3649-8384"))
@@ -17,7 +17,7 @@ VignetteBuilder:
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 URL: https://github.com/juancasy/tostada
 BugReports: https://github.com/juancasy/tostada/issues
 Imports: 
