@@ -46,6 +46,8 @@
 #'   }
 #'
 #' @seealso \code{\link{s_sep}}
+#'
+#' @export
 
 l_sep <- function(model.df,
                   L = NULL,
